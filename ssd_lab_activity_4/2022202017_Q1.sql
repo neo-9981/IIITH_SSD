@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE PROCEDURE addition(IN var1 INT, IN var2 INT, OUT sum INT)
+BEGIN
+SELECT var1+var2 INTO sum;
+SELECT sum;
+END $$
+DELIMITER ;
+CALL addition(10,20,@sum);
