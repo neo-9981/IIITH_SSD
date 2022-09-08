@@ -1,0 +1,51 @@
+<HTML>  
+  
+    <HEAD>  
+         <TITLE> Add/Remove dynamic rows in HTML table </TITLE>  
+         <SCRIPT language="javascript">  
+  
+</SCRIPT>  
+
+    </HEAD>  
+    <H3>student Records</H3>  
+ 
+    <BODY>  
+        
+        <div class="mainContainer">
+            <!-- Roll no -->
+            <label for="rollno">Roll No</label>
+            <input type="number" placeholder="enter your roll no" name="rollno" required>
+            <br><br>
+
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="name" placeholder="enter your full name" name="name" required>
+
+            <br>
+            
+            <INPUT type="button" value="Add Now!" onclick="addRow('dataTable')" />
+            <TABLE id="dataTable" width="350px" ></TABLE>
+
+            <TR>  
+                <TD><input type="button" name="button1" value="Delete" onclick="removeRow('button1')"></TD>  
+                <TD>1</TD>  
+                <TD><input type="text" value="" name="nameTxt"></TD>  
+           </TR>  
+      </TABLE>
+
+        </div>
+<!--
+
+    <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />  
+         <TABLE id="dataTable" width="350px" border="1">  
+              <TR>  
+                   <TD><input type="button" name="button1" value="Delete" onclick="removeRow('button1')"></TD>  
+                   <TD>1</TD>  
+                   <TD><input type="text" value="" name="nameTxt"></TD>  
+              </TR>  
+         </TABLE>
+-->
+           
+    </BODY>  
+ 
+</HTML>
